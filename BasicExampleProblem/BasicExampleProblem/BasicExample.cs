@@ -21,5 +21,22 @@ namespace BasicExampleProblem
                 Console.WriteLine("Odd");
             }
         }
+        public void OddNumberRange()
+        {
+            Console.WriteLine("Enter the First Number");
+            int start = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Last Number");
+            int end = Convert.ToInt32(Console.ReadLine());
+
+            for(int i=start; i<end; i++)
+            {
+                if(i%2 != 0)
+                {
+                    Console.WriteLine("Odd Number :" + i + " ");
+                }
+            }
+            //Console.ReadLine();
+        }
     }
 }
