@@ -36,7 +36,20 @@ namespace BasicExampleProblem
                     Console.WriteLine("Odd Number :" + i + " ");
                 }
             }
-            //Console.ReadLine();
+            Console.ReadLine();
+        }
+        public void NagativeOrNot()
+        {
+            Console.WriteLine("Enter the Number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if(num > 0)
+            {
+                Console.WriteLine(num + " " + "it is positive");
+            }
+            else
+            {
+                Console.WriteLine(num + " " + "it is Nagative");
+            }
         }
     }
 }
