@@ -51,5 +51,22 @@ namespace BasicExampleProblem
                 Console.WriteLine(num + " " + "it is Nagative");
             }
         }
+        public void LargestNumber()
+        {
+            Console.WriteLine("Enter the first Number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Second Number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            if(num1 > num2)
+            {
+                Console.WriteLine(num1 + " " + "Num1 is largest number");
+            }
+            else
+            {
+                Console.WriteLine(num2 + " " + " Num2 is largest number");
+            }
+        }
     }
 }
