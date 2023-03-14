@@ -137,5 +137,19 @@ namespace BasicExampleProblem
             }
             Console.WriteLine("sum of digits" + sum);
         }
+        public void Reverse()
+        {
+            Console.WriteLine(" Enter the Number :");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int reverse = 0;
+
+            while(num > 0)
+            {
+                int temp = num % 10;
+                reverse = reverse * 10 + temp;
+                num = num / 10;
+            }
+            Console.WriteLine("Reverse Number :" + reverse);
+        }
     }
 }
