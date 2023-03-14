@@ -151,5 +151,29 @@ namespace BasicExampleProblem
             }
             Console.WriteLine("Reverse Number :" + reverse);
         }
+        public void ReverseOfPalindrome()
+        {
+            Console.WriteLine(" Enter the Number :");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int reverse = 0;
+            int temp = num;
+
+            while (temp > 0)
+            {
+                int digit = temp % 10;
+                reverse = reverse * 10 + digit;
+                temp = temp / 10;
+            }
+            Console.WriteLine("The reversed number is: " + reverse);
+
+            if (reverse == num)
+            {
+                Console.WriteLine("The number is a palindrome");
+            }
+            else
+            {
+                Console.WriteLine("The number is not a palindrome.");
+            }
+        }
     }
 }
