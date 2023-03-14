@@ -15,7 +15,7 @@ namespace BasicExampleProblem
             while (flag)
             {
                 Console.WriteLine("Basic Problem Example");
-                Console.WriteLine("\n1.Even or Odd,\n2.Odd Number Range, \n3.PositiveOrNot,\n4 largest Number");
+                Console.WriteLine("\n1.Even or Odd,\n2.Odd Number Range, \n3.PositiveOrNot,\n4 largest Number\n5.SwapNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +32,9 @@ namespace BasicExampleProblem
                         basic.LargestNumber();
                         break;
                     case 5:
+                        basic.SwapNumber();
+                        break;
+                    case 6:
                         flag= false;
                         break;
                 }

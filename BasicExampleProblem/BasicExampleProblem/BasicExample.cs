@@ -68,5 +68,19 @@ namespace BasicExampleProblem
                 Console.WriteLine(num2 + " " + " Num2 is largest number");
             }
         }
+        public void SwapNumber()
+        {
+            Console.WriteLine("Enter the first Number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Second Number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            int temp = num1;
+            num1 = num2;
+            num2 = temp;
+
+            Console.WriteLine("Swap Number : Number 1 :" +num1+ " " + "Number 2 :" + num2);
+        }
     }
 }
