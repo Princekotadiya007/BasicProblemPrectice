@@ -15,7 +15,7 @@ namespace BasicExampleProblem
             while (flag)
             {
                 Console.WriteLine("Basic Problem Example");
-                Console.WriteLine("\n1.Even or Odd,\n2.Odd Number Range, \n3.PositiveOrNot,\n4 largest Number\n5.SwapNumber,\n6.Divisible By 2,\n7.Sum of multiple 3 to 5,\n8.Multiple of 17");
+                Console.WriteLine("\n1.Even or Odd,\n2.Odd Number Range, \n3.PositiveOrNot,\n4 largest Number\n5.SwapNumber,\n6.Divisible By 2,\n7.Sum of multiple 3 to 5,\n8.Multiple of 17, \n9.Sum of Digits ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -44,6 +44,9 @@ namespace BasicExampleProblem
                         basic.PrintMultiples();
                         break;
                     case 9:
+                        basic.SumDigits();
+                        break;
+                    case 10:
                         flag= false;
                         break;
                 }
