@@ -110,5 +110,18 @@ namespace BasicExampleProblem
                 Console.WriteLine("The sum of all multiples of 3 and 5 is" + sum);
             }
         }
+        public void PrintMultiples()
+        {
+            Console.WriteLine("Enter the Number :");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for(int i=1; i<num; i++)
+            {
+                int multiple = i * 17;
+                if(multiple < 100)
+                {
+                    Console.WriteLine(multiple);
+                }
+            }
+        }
     }
 }
