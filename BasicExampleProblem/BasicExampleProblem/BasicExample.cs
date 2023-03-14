@@ -82,5 +82,18 @@ namespace BasicExampleProblem
 
             Console.WriteLine("Swap Number : Number 1 :" +num1+ " " + "Number 2 :" + num2);
         }
+        public void Divisible()
+        {
+            Console.WriteLine("Enter the Number :");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if(num % 2 == 0)
+            {
+                Console.WriteLine(num + "it is divisible");
+            }
+            else
+            {
+                Console.WriteLine(num + " it is not divisible");
+            }
+        }
     }
 }
