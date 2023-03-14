@@ -15,7 +15,7 @@ namespace BasicExampleProblem
             while (flag)
             {
                 Console.WriteLine("Basic Problem Example");
-                Console.WriteLine("\n1.Even or Odd,\n2.Odd Number Range, \n3.PositiveOrNot,\n4 largest Number\n5.SwapNumber,\n6.Divisible By 2,\n7.Sum of multiple 3 to 5,\n8.Multiple of 17, \n9.Sum of Digits, \n10.Reverse Number, \n11..Reverse Of Palindrome ");
+                Console.WriteLine("\n1.Even or Odd,\n2.Odd Number Range, \n3.PositiveOrNot,\n4 largest Number\n5.SwapNumber,\n6.Divisible By 2,\n7.Sum of multiple 3 to 5,\n8.Multiple of 17, \n9.Sum of Digits, \n10.Reverse Number, \n11.Reverse Of Palindrome, \n12.Sum Of two Binary ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -53,6 +53,9 @@ namespace BasicExampleProblem
                         basic.ReverseOfPalindrome();
                         break;
                     case 12:
+                        basic.SumOfBinary();
+                        break;
+                    case 13:
                         flag= false;
                         break;
                 }

@@ -175,5 +175,24 @@ namespace BasicExampleProblem
                 Console.WriteLine("The number is not a palindrome.");
             }
         }
+        public void SumOfBinary()
+        {
+
+            Console.WriteLine(" Enter the First Number :");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine(" Enter the Second Number :");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            int binary1 = Convert.ToInt32(num1);
+            int binary2 = Convert.ToInt32(num2);
+
+            int sum = binary1 + binary2;
+
+            string sumBinary = Convert.ToString(sum);
+
+            Console.WriteLine("The sum of the binary numbers is:" + sumBinary);
+        }
     }
 }
